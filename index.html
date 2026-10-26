@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Turni in pista moto</title>
+<meta name="description" content="Scegli una data e trova i turni in pista per moto aperti al pubblico nei circuiti italiani, con prezzo, contatti e link per prenotare.">
+<style>
+:root {
+  --sfondo: #f6f5f2; --carta: #ffffff; --testo: #1c1c1a; --tenue: #66645e; --bordo: #dedbd3;
+  --accento: #c2410c; --accento-testo: #ffffff; --ok: #15803d; --avviso: #b45309;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --sfondo: #151513; --carta: #1f1f1c; --testo: #edece8; --tenue: #a19e95; --bordo: #34332f;
+    --accento: #fb923c; --accento-testo: #1c1c1a; --ok: #4ade80; --avviso: #fbbf24;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--sfondo); color: var(--testo); font: 16px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 860px; margin: 0 auto; padding: 20px 16px 48px; }
+h1 { font-size: 1.7rem; margin: 0 0 4px; letter-spacing: -0.01em; }
+.sotto { color: var(--tenue); margin: 0 0 20px; }
+form { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; background: var(--carta); border: 1px solid var(--bordo); border-radius: 12px; padding: 14px; }
+label { display: flex; flex-direction: column; gap: 4px; font-size: .85rem; color: var(--tenue); }
+input, select { font: inherit; color: var(--testo); background: var(--sfondo); border: 1px solid var(--bordo); border-radius: 8px; padding: 8px 10px; min-height: 42px; }
+.esito { margin: 18px 0 8px; color: var(--tenue); }
+h2 { font-size: 1.1rem; margin: 26px 0 10px; padding-bottom: 6px; border-bottom: 2px solid var(--accento); }
+.turno { background: var(--carta); border: 1px solid var(--bordo); border-radius: 12px; padding: 14px 16px; margin: 0 0 12px; }
+.turno .testa { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; align-items: baseline; }
+.turno .quando { font-weight: 700; }
+.turno .dove { font-size: 1.05rem; font-weight: 600; margin: 2px 0; }
+.turno .comune { color: var(--tenue); font-size: .9rem; }
+.righe { margin: 10px 0 0; display: grid; grid-template-columns: max-content 1fr; gap: 4px 12px; font-size: .95rem; }
+.righe dt { color: var(--tenue); }
+.righe dd { margin: 0; overflow-wrap: anywhere; }
+.manca { color: var(--avviso); }
+.azioni { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px; }
+.bottone { display: inline-block; background: var(--accento); color: var(--accento-testo); text-decoration: none; font-weight: 600; padding: 9px 14px; border-radius: 8px; }
+.fonte { margin-top: 10px; font-size: .8rem; color: var(--tenue); }
+.fonte a { color: inherit; }
+a { color: var(--accento); }
+.vuoto { background: var(--carta); border: 1px dashed var(--bordo); border-radius: 12px; padding: 16px; }
+.vuoto button { font: inherit; text-align: left; background: none; border: 0; padding: 0; color: var(--accento); text-decoration: underline; cursor: pointer; }
+footer { margin-top: 40px; font-size: .88rem; color: var(--tenue); }
+footer h3 { font-size: .95rem; color: var(--testo); margin: 20px 0 6px; }
+footer ul { padding-left: 18px; margin: 0; }
+footer li { margin: 0 0 6px; }
+.err { color: var(--avviso); }
+.iscriviti { margin-top: 32px; background: var(--carta); border: 1px solid var(--bordo); border-left: 4px solid var(--accento); border-radius: 12px; padding: 16px; }
+.iscriviti h2 { border: 0; margin: 0 0 4px; padding: 0; }
+.iscriviti p { margin: 0 0 12px; color: var(--tenue); }
+.iscriviti form { display: block; background: none; border: 0; padding: 0; }
+.iscriviti .riga { display: flex; flex-wrap: wrap; gap: 8px; }
+.iscriviti input[type=email] { flex: 1 1 220px; }
+.iscriviti button { font: inherit; font-weight: 600; border: 0; border-radius: 8px; padding: 9px 16px; min-height: 42px; background: var(--accento); color: var(--accento-testo); cursor: pointer; }
+.iscriviti button:disabled { opacity: .6; cursor: wait; }
+.iscriviti .consenso { display: flex; flex-direction: row; align-items: flex-start; gap: 8px; margin: 10px 0 0; font-size: .85rem; }
+.iscriviti .consenso input { min-height: 0; margin-top: 3px; }
+.iscriviti .fatto { color: var(--ok); font-weight: 600; margin: 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Turni in pista moto</h1>
+  <p class="sotto">Scegli un giorno: ecco dove si gira in moto nei circuiti italiani, chi organizza, quanto costa e come prenotare.</p>
+
+  <form id="filtri" onsubmit="return false">
+    <label>Giorno <input type="date" id="data"></label>
+    <label>Quanto largo
+      <select id="ampiezza">
+        <option value="0">Solo quel giorno</option>
+        <option value="3">3 giorni prima e dopo</option>
+        <option value="mese">Tutto il mese</option>
+      </select>
+    </label>
+    <label>Circuito <select id="circuito"><option value="">Tutti</option></select></label>
+    <label>Regione <select id="regione"><option value="">Tutte</option></select></label>
+  </form>
+
+  <p class="esito" id="esito">Carico i turni…</p>
+  <div id="risultati"></div>
+
+  <!-- Iscrizione su MailerLite. Senza JavaScript il modulo si invia lo stesso e la risposta si apre in una scheda nuova. -->
+  <section class="iscriviti">
+    <h2>Le date nuove, una volta al mese</h2>
+    <p>Quando i circuiti pubblicano la stagione, ti scrivo le giornate nuove con prezzi e link per prenotare. Una mail al mese, ti disiscrivi quando vuoi.</p>
+    <form id="iscrizione" action="https://assets.mailerlite.com/jsonp/2730860/forms/201946381599901177/subscribe" method="post" target="_blank">
+      <div class="riga">
+        <input type="email" name="fields[email]" placeholder="La tua email" autocomplete="email" required aria-label="La tua email">
+        <button type="submit">Iscriviti</button>
+      </div>
+      <label class="consenso"><input type="checkbox" required> <span>Ho letto l'<a href="privacy.html">informativa sulla privacy</a> e voglio ricevere la newsletter.</span></label>
+      <input type="hidden" name="ml-submit" value="1">
+      <input type="hidden" name="anticsrf" value="true">
+    </form>
+    <p class="err" id="iscrizione-errore" hidden>L'iscrizione non è passata: controlla l'indirizzo email e riprova.</p>
+    <p class="fatto" id="iscritto" hidden>Fatto, sei iscritto. Se ti arriva una mail di conferma, apri il link che c'è dentro (se non la trovi, guarda nello spam).</p>
+  </section>
+
+  <footer>
+    <p>I prezzi cambiano e spesso i siti non li scrivono: prima di partire, conferma con chi organizza. Questa pagina non vende niente, rimanda sempre al sito di chi vende.</p>
+    <h3>Da dove vengono i dati</h3>
+    <ul id="fonti"></ul>
+    <h3>Cosa manca, e perché</h3>
+    <ul id="mancano"></ul>
+    <p id="generato"></p>
+    <p><a href="privacy.html">Privacy</a> · Contatti: <a href="mailto:turnipista.app@gmail.com">turnipista.app@gmail.com</a></p>
+  </footer>
+</main>
+<script>
+const MESI = ["gennaio","febbraio","marzo","aprile","maggio","giugno","luglio","agosto","settembre","ottobre","novembre","dicembre"];
+const GIORNI = ["dom","lun","mar","mer","gio","ven","sab"];
+const $ = (id) => document.getElementById(id);
+let DATI = null;
+
+function esc(s) {
+  return String(s ?? "").replace(/[&<>"']/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+function giorno(iso) {
+  const d = new Date(iso + "T12:00:00");
+  return `${GIORNI[d.getDay()]} ${d.getDate()} ${MESI[d.getMonth()]} ${d.getFullYear()}`;
+}
+function quando(t) {
+  return t.data_fine && t.data_fine !== t.data_inizio ? `${giorno(t.data_inizio)} – ${giorno(t.data_fine)}` : giorno(t.data_inizio);
+}
+function letto(iso) {
+  if (!iso) return "data sconosciuta";
+  const d = new Date(iso);
+  return d.toLocaleDateString("it-IT", {day: "numeric", month: "long", year: "numeric"});
+}
+function sicuro(url) {
+  return /^https?:\/\//i.test(url || "") ? url : null;
+}
+function aggiungiGiorni(iso, n) {
+  const d = new Date(iso + "T12:00:00"); d.setDate(d.getDate() + n);
+  return d.toISOString().slice(0, 10);
+}
+function intervallo() {
+  const data = $("data").value, amp = $("ampiezza").value;
+  if (amp === "mese") return [data.slice(0, 8) + "01", data.slice(0, 8) + "31"];
+  const n = Number(amp);
+  return [aggiungiGiorni(data, -n), aggiungiGiorni(data, n)];
+}
+function filtra() {
+  const [da, a] = intervallo(), c = $("circuito").value, r = $("regione").value;
+  return DATI.turni.filter((t) =>
+    t.data_inizio <= a && t.data_fine >= da &&
+    (!c || t.circuito === c) &&
+    (!r || DATI.circuiti[t.circuito].regione === r));
+}
+
+function scheda(t) {
+  const circ = DATI.circuiti[t.circuito];
+  const k = t.contatti || {};
+  const contatti = [
+    k.telefono && `<a href="tel:${esc(k.telefono.replace(/[^\d+]/g, ""))}">${esc(k.telefono)}</a>`,
+    k.email && `<a href="mailto:${esc(k.email)}">${esc(k.email)}</a>`,
+    sicuro(k.sito) && `<a href="${esc(k.sito)}" target="_blank" rel="noopener">${esc(k.sito.replace(/^https?:\/\//i, "").toLowerCase())}</a>`,
+  ].filter(Boolean).join(" · ");
+  const prenota = sicuro(t.prenota);
+  const fonti = t.fonti.map((f) => `<a href="${esc(sicuro(f.url) || "#")}" target="_blank" rel="noopener">${esc(f.nome)}</a>, letto il ${letto(f.letto_il)}`).join("; ");
+  return `<article class="turno">
+    <div class="testa"><span class="quando">${quando(t)}</span>${t.orario ? `<span class="comune">${esc(t.orario)}</span>` : ""}</div>
+    <div class="dove">${esc(circ.nome)}</div>
+    <div class="comune">${esc(circ.comune)}</div>
+    <dl class="righe">
+      <dt>Organizza</dt><dd>${esc(t.organizzatore || "non indicato")}</dd>
+      ${t.tipo ? `<dt>Formula</dt><dd>${esc(t.tipo)}</dd>` : ""}
+      <dt>Prezzo</dt><dd>${t.prezzo ? esc(t.prezzo) : `<span class="manca">non pubblicato: chiedilo all'organizzatore</span>`}</dd>
+      <dt>Contatti</dt><dd>${contatti || `<span class="manca">nessun recapito pubblico: vedi la fonte qui sotto</span>`}</dd>
+      ${t.note ? `<dt>Note</dt><dd>${esc(t.note)}</dd>` : ""}
+    </dl>
+    ${prenota ? `<div class="azioni"><a class="bottone" href="${esc(prenota)}" target="_blank" rel="noopener">Prenota sul sito di chi organizza</a></div>` : ""}
+    <div class="fonte">Fonte: ${fonti}</div>
+  </article>`;
+}
+
+function prossimo() {
+  const [, a] = intervallo(), c = $("circuito").value, r = $("regione").value;
+  return DATI.turni.find((t) => t.data_inizio > a && (!c || t.circuito === c) && (!r || DATI.circuiti[t.circuito].regione === r));
+}
+
+function mostra() {
+  if (!DATI || !$("data").value) return;
+  const qs = new URLSearchParams({data: $("data").value});
+  for (const id of ["ampiezza", "circuito", "regione"]) if ($(id).value && $(id).value !== "0") qs.set(id, $(id).value);
+  history.replaceState(null, "", "?" + qs);
+  const turni = filtra();
+  const [da, a] = intervallo();
+  const periodo = da === a ? giorno(da) : `dal ${giorno(da)} al ${giorno(a)}`;
+  $("esito").textContent = turni.length ? `${turni.length} ${turni.length === 1 ? "turno" : "turni"} ${periodo}.` : "";
+  if (!turni.length) {
+    const p = prossimo();
+    $("risultati").innerHTML = `<div class="vuoto">Nessun turno trovato ${esc(periodo)}.
+      ${p ? `Il primo dopo: <button type="button" data-vai="${p.data_inizio}">${giorno(p.data_inizio)}, ${esc(DATI.circuiti[p.circuito].nome)}</button>` : ""}
+      <br>Molti circuiti pubblicano le date della stagione nuova fra dicembre e febbraio: qui sotto c'è chi manca.</div>`;
+    return;
+  }
+  const perRegione = {};
+  for (const t of turni) (perRegione[DATI.circuiti[t.circuito].regione] ??= []).push(t);
+  $("risultati").innerHTML = Object.keys(perRegione).sort().map((r) =>
+    `<h2>${esc(r)}</h2>` + perRegione[r].map(scheda).join("")).join("");
+}
+
+function fondo() {
+  $("fonti").innerHTML = Object.values(DATI.fonti).map((f) =>
+    `<li><a href="${esc(sicuro(f.url) || "#")}" target="_blank" rel="noopener">${esc(f.nome)}</a>: letto il ${letto(f.ultima_lettura)}, ${f.turni} turni letti.
+     ${f.esito === "ok" ? "" : `<span class="err">Ultima lettura fallita, restano i dati di prima.</span>`}</li>`).join("");
+  $("mancano").innerHTML = DATI.non_coperte.map((f) =>
+    `<li><strong>${esc(f.nome)}</strong>: ${esc(f.motivo)}</li>`).join("");
+  $("generato").textContent = `Raccolta del ${letto(DATI.generato_il)}.`;
+}
+
+function riempiFiltri() {
+  const usati = new Set(DATI.turni.map((t) => t.circuito));  // solo circuiti con almeno un turno
+  const circ = Object.entries(DATI.circuiti).filter(([id]) => usati.has(id)).sort((x, y) => x[1].nome.localeCompare(y[1].nome));
+  $("circuito").insertAdjacentHTML("beforeend", circ.map(([id, c]) => `<option value="${id}">${esc(c.nome)}</option>`).join(""));
+  const regioni = [...new Set(Object.values(DATI.circuiti).map((c) => c.regione))].sort();
+  $("regione").insertAdjacentHTML("beforeend", regioni.map((r) => `<option>${esc(r)}</option>`).join(""));
+  const qs = new URLSearchParams(location.search);
+  $("data").value = qs.get("data") || new Date().toISOString().slice(0, 10);
+  for (const id of ["ampiezza", "circuito", "regione"]) if (qs.get(id)) $(id).value = qs.get(id);
+}
+
+$("filtri").addEventListener("input", mostra);
+$("risultati").addEventListener("click", (e) => {
+  const vai = e.target.closest("[data-vai]");
+  if (vai) { $("data").value = vai.dataset.vai; $("ampiezza").value = "0"; mostra(); }
+});
+
+$("iscrizione").addEventListener("submit", (e) => {
+  const form = e.currentTarget, bottone = form.querySelector("button");
+  e.preventDefault();
+  bottone.disabled = true;
+  $("iscrizione-errore").hidden = true;
+  fetch(form.action, {method: "POST", body: new FormData(form)})
+    .then((r) => r.json(), () => null)
+    .then((r) => {
+      bottone.disabled = false;
+      // Se la chiamata da qui non passa proprio, si torna all'invio normale del modulo.
+      if (r === null) return form.submit();
+      if (!r.success) { $("iscrizione-errore").hidden = false; return; }
+      form.hidden = true;
+      $("iscritto").hidden = false;
+    });
+});
+
+fetch("dati/turni.json", {cache: "no-store"})
+  .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then((d) => { DATI = d; riempiFiltri(); fondo(); mostra(); })
+  .catch((e) => { $("esito").innerHTML = `<span class="err">Non riesco a leggere dati/turni.json (${esc(e.message)}). Lancia prima raccogli.py.</span>`; });
+</script>
+</body>
+</html>

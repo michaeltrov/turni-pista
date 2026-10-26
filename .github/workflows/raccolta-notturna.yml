@@ -1,0 +1,33 @@
+# Raccolta notturna dei turni in pista: rifà dati/turni.json dai siti e lo salva nel repository.
+# Gratis: sui repository pubblici i minuti di Actions sono illimitati. Una raccolta ne usa 2-3.
+# Niente test qui: le pagine salvate per i test restano sul portatile, non nel repository pubblico.
+name: Raccolta turni in pista
+
+on:
+  schedule:
+    - cron: "17 2 * * *"   # ogni notte alle 02:17 UTC, fuori dagli orari di punta
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  raccogli:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Raccolta dai siti
+        run: python raccogli.py
+      - name: Salva il JSON
+        run: |
+          git config user.name "raccolta-turni"
+          git config user.email "raccolta-turni@users.noreply.github.com"
+          # generato_il e le date di lettura cambiano a ogni giro, quindi c'è sempre un commit:
+          # così GitHub non spegne il workflow dopo 60 giorni senza attività nel repository.
+          git add dati/turni.json
+          git diff --cached --quiet || git commit -m "turni in pista: raccolta del $(date -u +%F)"
+          git push
