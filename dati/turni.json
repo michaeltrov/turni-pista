@@ -1,0 +1,1100 @@
+{
+ "generato_il": "2026-10-26T12:18:34+00:00",
+ "circuiti": {
+  "misano": {
+   "nome": "Misano World Circuit Marco Simoncelli",
+   "comune": "Misano Adriatico (RN)",
+   "regione": "Emilia-Romagna"
+  },
+  "imola": {
+   "nome": "Autodromo Enzo e Dino Ferrari",
+   "comune": "Imola (BO)",
+   "regione": "Emilia-Romagna"
+  },
+  "varano": {
+   "nome": "Autodromo Riccardo Paletti",
+   "comune": "Varano de' Melegari (PR)",
+   "regione": "Emilia-Romagna"
+  },
+  "modena": {
+   "nome": "Autodromo di Modena",
+   "comune": "Marzaglia (MO)",
+   "regione": "Emilia-Romagna"
+  },
+  "mugello": {
+   "nome": "Mugello Circuit",
+   "comune": "Scarperia e San Piero (FI)",
+   "regione": "Toscana"
+  },
+  "vallelunga": {
+   "nome": "Autodromo di Vallelunga Piero Taruffi",
+   "comune": "Campagnano di Roma (RM)",
+   "regione": "Lazio"
+  },
+  "monza": {
+   "nome": "Autodromo Nazionale Monza",
+   "comune": "Monza (MB)",
+   "regione": "Lombardia"
+  },
+  "tazio": {
+   "nome": "Circuito Tazio Nuvolari",
+   "comune": "Cervesina (PV)",
+   "regione": "Lombardia"
+  },
+  "cremona": {
+   "nome": "Cremona Circuit",
+   "comune": "San Martino del Lago (CR)",
+   "regione": "Lombardia"
+  },
+  "franciacorta": {
+   "nome": "Autodromo di Franciacorta",
+   "comune": "Castrezzato (BS)",
+   "regione": "Lombardia"
+  },
+  "adria": {
+   "nome": "Adria International Raceway",
+   "comune": "Adria (RO)",
+   "regione": "Veneto"
+  },
+  "magione": {
+   "nome": "Autodromo dell'Umbria",
+   "comune": "Magione (PG)",
+   "regione": "Umbria"
+  }
+ },
+ "fonti": {
+  "misano": {
+   "id": "misano",
+   "nome": "Misano World Circuit, calendario pista",
+   "url": "https://www.misanocircuit.com/events",
+   "chi_vende": "organizzatori esterni",
+   "condizioni": "Nessuna condizione d'uso sul sito (solo privacy, cookie e regolamento di pista). robots.txt permette tutto tranne /admin. Letto il 2026-10-21.",
+   "ultima_lettura": "2026-10-26T12:18:34+00:00",
+   "esito": "ok",
+   "turni": 37
+  },
+  "vallelunga": {
+   "id": "vallelunga",
+   "nome": "Autodromo di Vallelunga, prove libere moto",
+   "url": "https://motorsport.vallelunga.it/pl-moto-2/",
+   "chi_vende": "il circuito, più giornate di partner",
+   "condizioni": "Nessuna condizione d'uso trovata su motorsport.vallelunga.it (menu e piè di pagina). robots.txt blocca solo /wp-admin/. Letto il 2026-10-21.",
+   "ultima_lettura": "2026-10-26T12:18:34+00:00",
+   "esito": "ok",
+   "turni": 8
+  },
+  "varano": {
+   "id": "varano",
+   "nome": "Autodromo di Varano, calendario eventi",
+   "url": "https://www.autodromovarano.it/calendario/",
+   "chi_vende": "il circuito (SO.GE.S.A.), più organizzatori esterni",
+   "condizioni": "Il link \"Terms & Conditions\" del sito porta a una pagina che non esiste (404). Nessun divieto trovato. robots.txt non vieta niente. Letto il 2026-10-21.",
+   "ultima_lettura": "2026-10-26T12:18:34+00:00",
+   "esito": "ok",
+   "turni": 0
+  },
+  "mugello": {
+   "id": "mugello",
+   "nome": "Mugello Circuit, track day moto",
+   "url": "https://www.mugellocircuit.it/it/eventi/prove-libere-moto",
+   "chi_vende": "organizzatori esterni",
+   "condizioni": "Nessuna condizione d'uso sul sito (piè di pagina: privacy, accessibilità, codice di condotta, cookie). robots.txt blocca solo cartelle di sistema. Letto il 2026-10-21.",
+   "ultima_lettura": "2026-10-26T12:18:34+00:00",
+   "esito": "ok",
+   "turni": 1
+  },
+  "tazio": {
+   "id": "tazio",
+   "nome": "Circuito Tazio Nuvolari, negozio online",
+   "url": "https://shop.circuitotazionuvolari.it/",
+   "chi_vende": "il circuito, per conto suo e degli operatori",
+   "condizioni": "Termini e condizioni del negozio: riserva il diritto d'autore sui messaggi pubblicati, non vieta la raccolta automatica. Prendiamo solo fatti (data, prezzo) e rimandiamo alla pagina. robots.txt blocca solo /wp-admin/. Letto il 2026-10-21.",
+   "ultima_lettura": "2026-10-26T12:18:34+00:00",
+   "esito": "ok",
+   "turni": 4
+  },
+  "promoracing": {
+   "id": "promoracing",
+   "nome": "Promo Racing, calendario prove libere moto",
+   "url": "https://www.promoracing.it/it/calendario/moto",
+   "chi_vende": "organizzatore",
+   "condizioni": "Nessuna condizione d'uso del sito: ci sono solo \"Termini e Condizioni di Pagamento\" per chi compra, privacy e cookie. Nessun robots.txt. Letto il 2026-10-21.",
+   "ultima_lettura": "2026-10-26T12:18:34+00:00",
+   "esito": "ok",
+   "turni": 1
+  },
+  "portamiinpista": {
+   "id": "portamiinpista",
+   "nome": "Portami in Pista, prove libere moto",
+   "url": "https://www.portamiinpista.it/TrackDays/",
+   "chi_vende": "organizzatore",
+   "condizioni": "Nessuna condizione d'uso pubblicata (solo privacy, cookie, regolamento di pista; \"All Rights Reserved\" generico). robots.txt vieta solo il modulo di pagamento e l'area riservata: noi lo linkiamo, non lo apriamo. Letto il 2026-10-21.",
+   "ultima_lettura": "2026-10-26T12:18:34+00:00",
+   "esito": "ok",
+   "turni": 29
+  }
+ },
+ "non_coperte": [
+  {
+   "id": "imola",
+   "nome": "Autodromo di Imola",
+   "url": "https://www.autodromoimola.it/termini-e-condizioni-di-utilizzo/",
+   "motivo": "Le condizioni d'uso vietano di copiare, ripubblicare o \"caricare da programma\" i contenuti senza consenso. Serve il permesso scritto."
+  },
+  {
+   "id": "rossocorsa",
+   "nome": "Rosso Corsa (organizzatore)",
+   "url": "https://www.rossocorsaonline.com/termini-condizioni-utilizzo",
+   "motivo": "Stesso divieto di Imola. Le sue date a Misano arrivano comunque dal calendario del circuito."
+  },
+  {
+   "id": "cremona",
+   "nome": "Cremona Circuit",
+   "url": "https://cremonacircuit.it/booking/",
+   "motivo": "Le date moto stanno nel sistema di prenotazione, che risponde solo con un codice di sessione della pagina. Il calendario pubblico mostra auto e kart, ed è fermo a dicembre 2026. Da rifare."
+  },
+  {
+   "id": "magione",
+   "nome": "Autodromo di Magione",
+   "url": "https://www.autodromomagione.com/calendario/",
+   "motivo": "Il calendario del sito non ha eventi futuri (letto il 2026-10-21). Le prove libere si vendono nel negozio del sito: da guardare quando escono le date 2027."
+  },
+  {
+   "id": "monza",
+   "nome": "Autodromo di Monza",
+   "url": "https://www.monzanet.it/",
+   "motivo": "Nel calendario (58 eventi fino a dicembre 2026) nessuna giornata moto aperta al pubblico."
+  },
+  {
+   "id": "adria",
+   "nome": "Adria International Raceway",
+   "url": "https://www.adriaraceway.com/",
+   "motivo": "Il sito risponde 403 (accesso negato) allo script."
+  },
+  {
+   "id": "franciacorta",
+   "nome": "Autodromo di Franciacorta",
+   "url": "https://www.autodromodifranciacorta.it/",
+   "motivo": "Il dominio trovato porta al kartodromo. Il sito del circuito moto va ancora trovato."
+  },
+  {
+   "id": "gully",
+   "nome": "Gully Racing (organizzatore)",
+   "url": "https://www.gullyracing.it/",
+   "motivo": "Oggi vende solo date in Spagna. Le sue date a Misano arrivano dal calendario del circuito."
+  },
+  {
+   "id": "proveliberemoto",
+   "nome": "proveliberemoto.it / MES Experience (organizzatore)",
+   "url": "https://www.proveliberemoto.it/it/28-calendario",
+   "motivo": "Il 21/10/2026 nessuna giornata in vendita nei mesi del calendario, e le date sono scritte senza anno. Da riguardare quando esce la stagione 2027."
+  },
+  {
+   "id": "gasss",
+   "nome": "Gasss (organizzatore)",
+   "url": "https://www.gasss.eu/impressum",
+   "motivo": "La pagina legale vieta di riusare testi e informazioni del sito senza consenso. Le sue date a Misano e al Mugello arrivano dai circuiti, ma senza il prezzo (645-695 € sul suo sito)."
+  },
+  {
+   "id": "eleven",
+   "nome": "Eleven Riding Life / Team Mora Moto (organizzatore)",
+   "url": "https://www.elevenridinglife.com/track-days/",
+   "motivo": "Il 21/10/2026 nessuna giornata in vendita (solo simulatore e servizi). Ha un catalogo leggibile: si aggiunge quando escono le date 2027."
+  },
+  {
+   "id": "emg",
+   "nome": "EMG Eventi / MotoXRacing (organizzatore)",
+   "url": "https://emgeventi.it/events/",
+   "motivo": "La pagina degli eventi non elenca date il 21/10/2026."
+  },
+  {
+   "id": "primainpista",
+   "nome": "PrimainPista (organizzatore)",
+   "url": "https://www.primainpista.it/",
+   "motivo": "Il calendario del sito è vuoto. Le sue giornate al Tazio Nuvolari arrivano dal negozio del circuito."
+  }
+ ],
+ "turni": [
+  {
+   "circuito": "misano",
+   "data_inizio": "2026-10-26",
+   "data_fine": "2026-10-26",
+   "organizzatore": "PROMO RACING",
+   "veicolo": "moto",
+   "tipo": "a turni",
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": "+39 055 480553",
+    "email": "info@promoracing.it",
+    "sito": "http://www.PROMORACING.IT"
+   },
+   "prenota": "http://www.PROMORACING.IT",
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    },
+    {
+     "id": "promoracing",
+     "nome": "Promo Racing, calendario prove libere moto",
+     "url": "https://www.promoracing.it/it/calendario/moto.651/prove-moto-special-price",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2026-10-27",
+   "data_fine": "2026-10-29",
+   "organizzatore": "GASSS",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": null,
+    "email": null,
+    "sito": "https://www.gasss.eu/it"
+   },
+   "prenota": "https://www.gasss.eu/it",
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "vallelunga",
+   "data_inizio": "2026-11-07",
+   "data_fine": "2026-11-07",
+   "organizzatore": "Autodromo di Vallelunga",
+   "veicolo": "moto",
+   "tipo": "a turni",
+   "orario": "3 gruppi",
+   "prezzo": "feriale 180 € (5 turni), prefestivo e festivo 210 € (5 turni + open pit 4 ore)",
+   "contatti": {
+    "telefono": null,
+    "email": null,
+    "sito": "https://motorsport.vallelunga.it"
+   },
+   "prenota": "https://motorsport.vallelunga.it/pl-moto-2/",
+   "note": null,
+   "fonti": [
+    {
+     "id": "vallelunga",
+     "nome": "Autodromo di Vallelunga, prove libere moto",
+     "url": "https://motorsport.vallelunga.it/pl-moto-2/",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "vallelunga",
+   "data_inizio": "2026-11-08",
+   "data_fine": "2026-11-08",
+   "organizzatore": "Autodromo di Vallelunga",
+   "veicolo": "moto",
+   "tipo": "a turni",
+   "orario": "3 gruppi",
+   "prezzo": "feriale 180 € (5 turni), prefestivo e festivo 210 € (5 turni + open pit 4 ore)",
+   "contatti": {
+    "telefono": null,
+    "email": null,
+    "sito": "https://motorsport.vallelunga.it"
+   },
+   "prenota": "https://motorsport.vallelunga.it/pl-moto-2/",
+   "note": null,
+   "fonti": [
+    {
+     "id": "vallelunga",
+     "nome": "Autodromo di Vallelunga, prove libere moto",
+     "url": "https://motorsport.vallelunga.it/pl-moto-2/",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2027-03-13",
+   "data_fine": "2027-03-13",
+   "organizzatore": "ROSSO CORSA",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": null,
+    "email": null,
+    "sito": "http://www.ROSSOCORSAONLINE.COM/66"
+   },
+   "prenota": "http://www.ROSSOCORSAONLINE.COM/66",
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2027-03-26",
+   "data_fine": "2027-03-28",
+   "organizzatore": "ACTION BIKE",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": null,
+    "email": null,
+    "sito": "https://www.ACTIONBIKE.DE"
+   },
+   "prenota": "https://www.ACTIONBIKE.DE",
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2027-04-09",
+   "data_fine": "2027-04-11",
+   "organizzatore": "EYBIS BMW",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": null,
+    "email": null,
+    "sito": "https://www.eybis.com/indexEN.html"
+   },
+   "prenota": "https://www.eybis.com/indexEN.html",
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2027-04-19",
+   "data_fine": "2027-04-19",
+   "organizzatore": "ROSSO CORSA",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": null,
+    "email": null,
+    "sito": "http://www.ROSSOCORSAONLINE.COM/66"
+   },
+   "prenota": "http://www.ROSSOCORSAONLINE.COM/66",
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2027-05-03",
+   "data_fine": "2027-05-03",
+   "organizzatore": "GULLY RACING",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": null,
+    "email": null,
+    "sito": "https://www.GULLYRACING.IT"
+   },
+   "prenota": "https://www.GULLYRACING.IT",
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2027-05-10",
+   "data_fine": "2027-05-10",
+   "organizzatore": "ROSSO CORSA",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": null,
+    "email": null,
+    "sito": "http://www.ROSSOCORSAONLINE.COM/66"
+   },
+   "prenota": "http://www.ROSSOCORSAONLINE.COM/66",
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2027-05-17",
+   "data_fine": "2027-05-17",
+   "organizzatore": "PROMO RACING",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": "+39 055 480553",
+    "email": null,
+    "sito": "http://www.PROMORACING.IT"
+   },
+   "prenota": "http://www.PROMORACING.IT",
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2027-05-24",
+   "data_fine": "2027-05-24",
+   "organizzatore": "RACE ACTION",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": null,
+    "email": null,
+    "sito": null
+   },
+   "prenota": null,
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2027-05-31",
+   "data_fine": "2027-05-31",
+   "organizzatore": "GULLY RACING",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": null,
+    "email": null,
+    "sito": "https://www.GULLYRACING.IT"
+   },
+   "prenota": "https://www.GULLYRACING.IT",
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2027-06-01",
+   "data_fine": "2027-06-01",
+   "organizzatore": "BRAGHI",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": null,
+    "email": null,
+    "sito": "https://www.ALEINPISTA.IT"
+   },
+   "prenota": "https://www.ALEINPISTA.IT",
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2027-06-02",
+   "data_fine": "2027-06-02",
+   "organizzatore": "ROSSO CORSA",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": null,
+    "email": null,
+    "sito": "http://www.ROSSOCORSAONLINE.COM/66"
+   },
+   "prenota": "http://www.ROSSOCORSAONLINE.COM/66",
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2027-06-07",
+   "data_fine": "2027-06-07",
+   "organizzatore": "PROMO RACING",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": "+39 055 480553",
+    "email": null,
+    "sito": "http://www.PROMORACING.IT"
+   },
+   "prenota": "http://www.PROMORACING.IT",
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2027-06-14",
+   "data_fine": "2027-06-14",
+   "organizzatore": "RACE ACTION",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": null,
+    "email": null,
+    "sito": null
+   },
+   "prenota": null,
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2027-07-08",
+   "data_fine": "2027-07-08",
+   "organizzatore": "ROSSO CORSA",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": null,
+    "email": null,
+    "sito": "http://www.ROSSOCORSAONLINE.COM/66"
+   },
+   "prenota": "http://www.ROSSOCORSAONLINE.COM/66",
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2027-07-19",
+   "data_fine": "2027-07-19",
+   "organizzatore": "RACE ACTION",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": null,
+    "email": null,
+    "sito": null
+   },
+   "prenota": null,
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2027-07-26",
+   "data_fine": "2027-07-27",
+   "organizzatore": "PROMO RACING",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": "+39 055 480553",
+    "email": null,
+    "sito": "http://www.PROMORACING.IT"
+   },
+   "prenota": "http://www.PROMORACING.IT",
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2027-08-10",
+   "data_fine": "2027-08-18",
+   "organizzatore": "REHM",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": null,
+    "email": null,
+    "sito": "https://www.REHMRACEDAYS.DE"
+   },
+   "prenota": "https://www.REHMRACEDAYS.DE",
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2027-08-20",
+   "data_fine": "2027-08-22",
+   "organizzatore": "ACTIVE BIKE",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": null,
+    "email": null,
+    "sito": "https://www.activbike.net"
+   },
+   "prenota": "https://www.activbike.net",
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2027-08-26",
+   "data_fine": "2027-08-28",
+   "organizzatore": "FIALA MOTORSPORT",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": null,
+    "email": null,
+    "sito": "https://www.MOTOR-SPORTS.EU"
+   },
+   "prenota": "https://www.MOTOR-SPORTS.EU",
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2027-08-29",
+   "data_fine": "2027-08-29",
+   "organizzatore": "BRAGHI",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": null,
+    "email": null,
+    "sito": "https://www.ALEINPISTA.IT"
+   },
+   "prenota": "https://www.ALEINPISTA.IT",
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2027-09-17",
+   "data_fine": "2027-09-19",
+   "organizzatore": "CR MOTO",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": null,
+    "email": null,
+    "sito": null
+   },
+   "prenota": null,
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2027-09-20",
+   "data_fine": "2027-09-20",
+   "organizzatore": "GULLY RACING",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": null,
+    "email": null,
+    "sito": "https://www.GULLYRACING.IT"
+   },
+   "prenota": "https://www.GULLYRACING.IT",
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2027-09-25",
+   "data_fine": "2027-09-25",
+   "organizzatore": "ROSSO CORSA",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": null,
+    "email": null,
+    "sito": "http://www.ROSSOCORSAONLINE.COM/66"
+   },
+   "prenota": "http://www.ROSSOCORSAONLINE.COM/66",
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2027-09-26",
+   "data_fine": "2027-09-26",
+   "organizzatore": "BRAGHI",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": null,
+    "email": null,
+    "sito": "https://www.ALEINPISTA.IT"
+   },
+   "prenota": "https://www.ALEINPISTA.IT",
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "mugello",
+   "data_inizio": "2027-09-28",
+   "data_fine": "2027-09-28",
+   "organizzatore": "Rossocorsa",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": null,
+   "prezzo": null,
+   "contatti": {
+    "telefono": null,
+    "email": "info@rossocorsaonline.com",
+    "sito": "http://www.rossocorsaonline.com"
+   },
+   "prenota": "http://www.rossocorsaonline.com",
+   "note": null,
+   "fonti": [
+    {
+     "id": "mugello",
+     "nome": "Mugello Circuit, track day moto",
+     "url": "https://www.mugellocircuit.it/it/eventi/prove-libere-moto/details/2027-09-28/1788-rossocorsa-1",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2027-10-02",
+   "data_fine": "2027-10-02",
+   "organizzatore": "PROMO RACING",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": "+39 055 480553",
+    "email": null,
+    "sito": "http://www.PROMORACING.IT"
+   },
+   "prenota": "http://www.PROMORACING.IT",
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2027-10-03",
+   "data_fine": "2027-10-03",
+   "organizzatore": "RACE ACTION",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": null,
+    "email": null,
+    "sito": null
+   },
+   "prenota": null,
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2027-10-09",
+   "data_fine": "2027-10-09",
+   "organizzatore": "BRAGHI",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": null,
+    "email": null,
+    "sito": "https://www.ALEINPISTA.IT"
+   },
+   "prenota": "https://www.ALEINPISTA.IT",
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2027-10-10",
+   "data_fine": "2027-10-10",
+   "organizzatore": "GULLY RACING",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": null,
+    "email": null,
+    "sito": "https://www.GULLYRACING.IT"
+   },
+   "prenota": "https://www.GULLYRACING.IT",
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2027-10-16",
+   "data_fine": "2027-10-16",
+   "organizzatore": "ROSSO CORSA",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": null,
+    "email": null,
+    "sito": "http://www.ROSSOCORSAONLINE.COM/66"
+   },
+   "prenota": "http://www.ROSSOCORSAONLINE.COM/66",
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  },
+  {
+   "circuito": "misano",
+   "data_inizio": "2027-10-17",
+   "data_fine": "2027-10-17",
+   "organizzatore": "PROMO RACING",
+   "veicolo": "moto",
+   "tipo": null,
+   "orario": "09:00-18:00",
+   "prezzo": null,
+   "contatti": {
+    "telefono": "+39 055 480553",
+    "email": null,
+    "sito": "http://www.PROMORACING.IT"
+   },
+   "prenota": "http://www.PROMORACING.IT",
+   "note": "Il calendario di Misano elenca solo organizzatori di giornate moto (visto da ottobre 2026 a settembre 2027). Prezzo e prenotazione sul sito dell'organizzatore.",
+   "fonti": [
+    {
+     "id": "misano",
+     "nome": "Misano World Circuit, calendario pista",
+     "url": "https://www.misanocircuit.com/events",
+     "letto_il": "2026-10-26T12:18:34+00:00"
+    }
+   ]
+  }
+ ]
+}
