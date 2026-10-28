@@ -6,19 +6,23 @@ import urllib.parse
 import urllib.request
 
 # Circuiti coperti o da coprire. La regione serve alla pagina per raggruppare.
+# lat/lon: dove porta "Portami al circuito" nell'app KneeDownMap. Un parcheggio o il paddock accanto al
+# tracciato, presi da OpenStreetMap il 27/10/2026 (Overpass e Nominatim), non il centro della pista: il
+# percorso si aggancia alla strada più vicina. Modena, Cremona e Franciacorta: centro dell'impianto.
+# Da controllare con un percorso di prova quando si aggiunge o si sposta un circuito.
 CIRCUITI = {
-    "misano": {"nome": "Misano World Circuit Marco Simoncelli", "comune": "Misano Adriatico (RN)", "regione": "Emilia-Romagna"},
-    "imola": {"nome": "Autodromo Enzo e Dino Ferrari", "comune": "Imola (BO)", "regione": "Emilia-Romagna"},
-    "varano": {"nome": "Autodromo Riccardo Paletti", "comune": "Varano de' Melegari (PR)", "regione": "Emilia-Romagna"},
-    "modena": {"nome": "Autodromo di Modena", "comune": "Marzaglia (MO)", "regione": "Emilia-Romagna"},
-    "mugello": {"nome": "Mugello Circuit", "comune": "Scarperia e San Piero (FI)", "regione": "Toscana"},
-    "vallelunga": {"nome": "Autodromo di Vallelunga Piero Taruffi", "comune": "Campagnano di Roma (RM)", "regione": "Lazio"},
-    "monza": {"nome": "Autodromo Nazionale Monza", "comune": "Monza (MB)", "regione": "Lombardia"},
-    "tazio": {"nome": "Circuito Tazio Nuvolari", "comune": "Cervesina (PV)", "regione": "Lombardia"},
-    "cremona": {"nome": "Cremona Circuit", "comune": "San Martino del Lago (CR)", "regione": "Lombardia"},
-    "franciacorta": {"nome": "Autodromo di Franciacorta", "comune": "Castrezzato (BS)", "regione": "Lombardia"},
-    "adria": {"nome": "Adria International Raceway", "comune": "Adria (RO)", "regione": "Veneto"},
-    "magione": {"nome": "Autodromo dell'Umbria", "comune": "Magione (PG)", "regione": "Umbria"},
+    "misano": {"nome": "Misano World Circuit Marco Simoncelli", "comune": "Misano Adriatico (RN)", "regione": "Emilia-Romagna", "lat": 43.96035, "lon": 12.68369},
+    "imola": {"nome": "Autodromo Enzo e Dino Ferrari", "comune": "Imola (BO)", "regione": "Emilia-Romagna", "lat": 44.34392, "lon": 11.71374},
+    "varano": {"nome": "Autodromo Riccardo Paletti", "comune": "Varano de' Melegari (PR)", "regione": "Emilia-Romagna", "lat": 44.68603, "lon": 10.01581},
+    "modena": {"nome": "Autodromo di Modena", "comune": "Marzaglia (MO)", "regione": "Emilia-Romagna", "lat": 44.63374, "lon": 10.81405},
+    "mugello": {"nome": "Mugello Circuit", "comune": "Scarperia e San Piero (FI)", "regione": "Toscana", "lat": 43.99717, "lon": 11.37221},
+    "vallelunga": {"nome": "Autodromo di Vallelunga Piero Taruffi", "comune": "Campagnano di Roma (RM)", "regione": "Lazio", "lat": 42.15659, "lon": 12.37004},
+    "monza": {"nome": "Autodromo Nazionale Monza", "comune": "Monza (MB)", "regione": "Lombardia", "lat": 45.61729, "lon": 9.28213},
+    "tazio": {"nome": "Circuito Tazio Nuvolari", "comune": "Cervesina (PV)", "regione": "Lombardia", "lat": 45.07314, "lon": 8.99197},
+    "cremona": {"nome": "Cremona Circuit", "comune": "San Martino del Lago (CR)", "regione": "Lombardia", "lat": 45.08544, "lon": 10.31046},
+    "franciacorta": {"nome": "Autodromo di Franciacorta", "comune": "Castrezzato (BS)", "regione": "Lombardia", "lat": 45.51267, "lon": 10.0055},
+    "adria": {"nome": "Adria International Raceway", "comune": "Adria (RO)", "regione": "Veneto", "lat": 45.04385, "lon": 12.14952},
+    "magione": {"nome": "Autodromo dell'Umbria", "comune": "Magione (PG)", "regione": "Umbria", "lat": 43.1308, "lon": 12.23846},
 }
 
 # Parole nel nome del circuito, per le fonti che lo scrivono a modo loro.

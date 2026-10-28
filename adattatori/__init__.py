@@ -1,15 +1,13 @@
 """Un modulo per fonte. Ognuno ha FONTE (chi è, dove, cosa dicono le condizioni d'uso) e
 raccogli(get, oggi), dove get(url, dati=None) scarica una pagina: così i test passano pagine salvate."""
-from . import misano, mugello, portamiinpista, promoracing, tazio, vallelunga, varano
+from . import misano, mugello, portamiinpista, promoracing, rossocorsa, tazio, vallelunga, varano
 
-TUTTI = [misano, vallelunga, varano, mugello, tazio, promoracing, portamiinpista]
+TUTTI = [misano, vallelunga, varano, mugello, tazio, promoracing, portamiinpista, rossocorsa]
 
 # Fonti viste e non raccolte, col motivo. Finiscono nel JSON e nella pagina, così si sa cosa manca.
 SALTATE = [
     {"id": "imola", "nome": "Autodromo di Imola", "url": "https://www.autodromoimola.it/termini-e-condizioni-di-utilizzo/",
      "motivo": "Le condizioni d'uso vietano di copiare, ripubblicare o \"caricare da programma\" i contenuti senza consenso. Serve il permesso scritto."},
-    {"id": "rossocorsa", "nome": "Rosso Corsa (organizzatore)", "url": "https://www.rossocorsaonline.com/termini-condizioni-utilizzo",
-     "motivo": "Stesso divieto di Imola. Le sue date a Misano arrivano comunque dal calendario del circuito."},
     {"id": "cremona", "nome": "Cremona Circuit", "url": "https://cremonacircuit.it/booking/",
      "motivo": "Le date moto stanno nel sistema di prenotazione, che risponde solo con un codice di sessione della pagina. Il calendario pubblico mostra auto e kart, ed è fermo a dicembre 2026. Da rifare."},
     {"id": "magione", "nome": "Autodromo di Magione", "url": "https://www.autodromomagione.com/calendario/",

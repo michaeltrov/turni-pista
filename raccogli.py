@@ -80,7 +80,9 @@ def main(scelte):
             traceback.print_exc()
     turni = [t for t in unisci(turni) if t["data_fine"] >= oggi.isoformat() and t["circuito"] in CIRCUITI]
     turni.sort(key=lambda t: (t["data_inizio"], t["circuito"], t["organizzatore"] or ""))
-    uscita = {"generato_il": adesso, "circuiti": CIRCUITI, "fonti": stato, "non_coperte": SALTATE, "turni": turni}
+    # "versione": formato del file. L'app KneeDownMap rifiuta le versioni che non conosce:
+    # si alza solo se un campo cambia significato, non quando se ne aggiunge uno.
+    uscita = {"versione": 1, "generato_il": adesso, "circuiti": CIRCUITI, "fonti": stato, "non_coperte": SALTATE, "turni": turni}
     USCITA.parent.mkdir(exist_ok=True)
     USCITA.write_text(json.dumps(uscita, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(f"scritti {len(turni)} turni in {USCITA}")
