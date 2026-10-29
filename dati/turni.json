@@ -1,65 +1,90 @@
 {
- "generato_il": "2026-10-28T08:26:34+00:00",
+ "versione": 1,
+ "generato_il": "2026-10-29T08:26:43+00:00",
  "circuiti": {
   "misano": {
    "nome": "Misano World Circuit Marco Simoncelli",
    "comune": "Misano Adriatico (RN)",
-   "regione": "Emilia-Romagna"
+   "regione": "Emilia-Romagna",
+   "lat": 43.96035,
+   "lon": 12.68369
   },
   "imola": {
    "nome": "Autodromo Enzo e Dino Ferrari",
    "comune": "Imola (BO)",
-   "regione": "Emilia-Romagna"
+   "regione": "Emilia-Romagna",
+   "lat": 44.34392,
+   "lon": 11.71374
   },
   "varano": {
    "nome": "Autodromo Riccardo Paletti",
    "comune": "Varano de' Melegari (PR)",
-   "regione": "Emilia-Romagna"
+   "regione": "Emilia-Romagna",
+   "lat": 44.68603,
+   "lon": 10.01581
   },
   "modena": {
    "nome": "Autodromo di Modena",
    "comune": "Marzaglia (MO)",
-   "regione": "Emilia-Romagna"
+   "regione": "Emilia-Romagna",
+   "lat": 44.63374,
+   "lon": 10.81405
   },
   "mugello": {
    "nome": "Mugello Circuit",
    "comune": "Scarperia e San Piero (FI)",
-   "regione": "Toscana"
+   "regione": "Toscana",
+   "lat": 43.99717,
+   "lon": 11.37221
   },
   "vallelunga": {
    "nome": "Autodromo di Vallelunga Piero Taruffi",
    "comune": "Campagnano di Roma (RM)",
-   "regione": "Lazio"
+   "regione": "Lazio",
+   "lat": 42.15659,
+   "lon": 12.37004
   },
   "monza": {
    "nome": "Autodromo Nazionale Monza",
    "comune": "Monza (MB)",
-   "regione": "Lombardia"
+   "regione": "Lombardia",
+   "lat": 45.61729,
+   "lon": 9.28213
   },
   "tazio": {
    "nome": "Circuito Tazio Nuvolari",
    "comune": "Cervesina (PV)",
-   "regione": "Lombardia"
+   "regione": "Lombardia",
+   "lat": 45.07314,
+   "lon": 8.99197
   },
   "cremona": {
    "nome": "Cremona Circuit",
    "comune": "San Martino del Lago (CR)",
-   "regione": "Lombardia"
+   "regione": "Lombardia",
+   "lat": 45.08544,
+   "lon": 10.31046
   },
   "franciacorta": {
    "nome": "Autodromo di Franciacorta",
    "comune": "Castrezzato (BS)",
-   "regione": "Lombardia"
+   "regione": "Lombardia",
+   "lat": 45.51267,
+   "lon": 10.0055
   },
   "adria": {
    "nome": "Adria International Raceway",
    "comune": "Adria (RO)",
-   "regione": "Veneto"
+   "regione": "Veneto",
+   "lat": 45.04385,
+   "lon": 12.14952
   },
   "magione": {
    "nome": "Autodromo dell'Umbria",
    "comune": "Magione (PG)",
-   "regione": "Umbria"
+   "regione": "Umbria",
+   "lat": 43.1308,
+   "lon": 12.23846
   }
  },
  "fonti": {
@@ -69,7 +94,7 @@
    "url": "https://www.misanocircuit.com/events",
    "chi_vende": "organizzatori esterni",
    "condizioni": "Nessuna condizione d'uso sul sito (solo privacy, cookie e regolamento di pista). robots.txt permette tutto tranne /admin. Letto il 2026-10-21.",
-   "ultima_lettura": "2026-10-28T08:26:34+00:00",
+   "ultima_lettura": "2026-10-29T08:26:43+00:00",
    "esito": "ok",
    "turni": 37
   },
@@ -79,7 +104,7 @@
    "url": "https://motorsport.vallelunga.it/pl-moto-2/",
    "chi_vende": "il circuito, più giornate di partner",
    "condizioni": "Nessuna condizione d'uso trovata su motorsport.vallelunga.it (menu e piè di pagina). robots.txt blocca solo /wp-admin/. Letto il 2026-10-21.",
-   "ultima_lettura": "2026-10-28T08:26:34+00:00",
+   "ultima_lettura": "2026-10-29T08:26:43+00:00",
    "esito": "ok",
    "turni": 8
   },
@@ -89,7 +114,7 @@
    "url": "https://www.autodromovarano.it/calendario/",
    "chi_vende": "il circuito (SO.GE.S.A.), più organizzatori esterni",
    "condizioni": "Il link \"Terms & Conditions\" del sito porta a una pagina che non esiste (404). Nessun divieto trovato. robots.txt non vieta niente. Letto il 2026-10-21.",
-   "ultima_lettura": "2026-10-28T08:26:34+00:00",
+   "ultima_lettura": "2026-10-29T08:26:43+00:00",
    "esito": "ok",
    "turni": 0
   },
@@ -99,7 +124,7 @@
    "url": "https://www.mugellocircuit.it/it/eventi/prove-libere-moto",
    "chi_vende": "organizzatori esterni",
    "condizioni": "Nessuna condizione d'uso sul sito (piè di pagina: privacy, accessibilità, codice di condotta, cookie). robots.txt blocca solo cartelle di sistema. Letto il 2026-10-21.",
-   "ultima_lettura": "2026-10-28T08:26:34+00:00",
+   "ultima_lettura": "2026-10-29T08:26:43+00:00",
    "esito": "ok",
    "turni": 1
   },
@@ -109,7 +134,7 @@
    "url": "https://shop.circuitotazionuvolari.it/",
    "chi_vende": "il circuito, per conto suo e degli operatori",
    "condizioni": "Termini e condizioni del negozio: riserva il diritto d'autore sui messaggi pubblicati, non vieta la raccolta automatica. Prendiamo solo fatti (data, prezzo) e rimandiamo alla pagina. robots.txt blocca solo /wp-admin/. Letto il 2026-10-21.",
-   "ultima_lettura": "2026-10-28T08:26:34+00:00",
+   "ultima_lettura": "2026-10-29T08:26:43+00:00",
    "esito": "ok",
    "turni": 4
   },
@@ -119,7 +144,7 @@
    "url": "https://www.promoracing.it/it/calendario/moto",
    "chi_vende": "organizzatore",
    "condizioni": "Nessuna condizione d'uso del sito: ci sono solo \"Termini e Condizioni di Pagamento\" per chi compra, privacy e cookie. Nessun robots.txt. Letto il 2026-10-21.",
-   "ultima_lettura": "2026-10-28T08:26:34+00:00",
+   "ultima_lettura": "2026-10-29T08:26:43+00:00",
    "esito": "ok",
    "turni": 0
   },
@@ -129,9 +154,19 @@
    "url": "https://www.portamiinpista.it/TrackDays/",
    "chi_vende": "organizzatore",
    "condizioni": "Nessuna condizione d'uso pubblicata (solo privacy, cookie, regolamento di pista; \"All Rights Reserved\" generico). robots.txt vieta solo il modulo di pagamento e l'area riservata: noi lo linkiamo, non lo apriamo. Letto il 2026-10-21.",
-   "ultima_lettura": "2026-10-28T08:26:34+00:00",
+   "ultima_lettura": "2026-10-29T08:26:43+00:00",
    "esito": "ok",
    "turni": 29
+  },
+  "rossocorsa": {
+   "id": "rossocorsa",
+   "nome": "Rosso Corsa, calendario prove",
+   "url": "https://www.rossocorsaonline.com/prove",
+   "chi_vende": "organizzatore",
+   "condizioni": "Le condizioni d'uso vietano di riprendere i contenuti senza consenso. Consenso scritto di GSA Organization (Veronica Amato) il 2026-10-28: date e link alla loro pagina per comprare. Il prezzo solo se lo pubblicano loro.",
+   "ultima_lettura": "2026-10-29T08:26:43+00:00",
+   "esito": "ok",
+   "turni": 0
   }
  },
  "non_coperte": [
@@ -140,12 +175,6 @@
    "nome": "Autodromo di Imola",
    "url": "https://www.autodromoimola.it/termini-e-condizioni-di-utilizzo/",
    "motivo": "Le condizioni d'uso vietano di copiare, ripubblicare o \"caricare da programma\" i contenuti senza consenso. Serve il permesso scritto."
-  },
-  {
-   "id": "rossocorsa",
-   "nome": "Rosso Corsa (organizzatore)",
-   "url": "https://www.rossocorsaonline.com/termini-condizioni-utilizzo",
-   "motivo": "Stesso divieto di Imola. Le sue date a Misano arrivano comunque dal calendario del circuito."
   },
   {
    "id": "cremona",
@@ -236,7 +265,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -261,7 +290,7 @@
      "id": "vallelunga",
      "nome": "Autodromo di Vallelunga, prove libere moto",
      "url": "https://motorsport.vallelunga.it/pl-moto-2/",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -286,7 +315,7 @@
      "id": "vallelunga",
      "nome": "Autodromo di Vallelunga, prove libere moto",
      "url": "https://motorsport.vallelunga.it/pl-moto-2/",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -311,7 +340,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -336,7 +365,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -361,7 +390,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -386,7 +415,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -411,7 +440,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -436,7 +465,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -461,7 +490,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -486,7 +515,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -511,7 +540,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -536,7 +565,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -561,7 +590,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -586,7 +615,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -611,7 +640,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -636,7 +665,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -661,7 +690,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -686,7 +715,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -711,7 +740,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -736,7 +765,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -761,7 +790,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -786,7 +815,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -811,7 +840,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -836,7 +865,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -861,7 +890,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -886,7 +915,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -911,7 +940,7 @@
      "id": "mugello",
      "nome": "Mugello Circuit, track day moto",
      "url": "https://www.mugellocircuit.it/it/eventi/prove-libere-moto/details/2027-09-28/1788-rossocorsa-1",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -936,7 +965,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -961,7 +990,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -986,7 +1015,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -1011,7 +1040,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -1036,7 +1065,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   },
@@ -1061,7 +1090,7 @@
      "id": "misano",
      "nome": "Misano World Circuit, calendario pista",
      "url": "https://www.misanocircuit.com/events",
-     "letto_il": "2026-10-28T08:26:34+00:00"
+     "letto_il": "2026-10-29T08:26:43+00:00"
     }
    ]
   }
